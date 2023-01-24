@@ -1,7 +1,7 @@
 eksctl create cluster \
---name eksCluster \
+--name adams-cluster \
 --region eu-west-1 \
---nodegroup-name eksNodes \
+--nodegroup-name adams-nodes \
 --nodes 2 \
 --nodes-min 2 \
 --nodes-max 10 \
