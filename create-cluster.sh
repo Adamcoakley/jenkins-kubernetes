@@ -1,0 +1,12 @@
+eksctl create cluster \
+--name eksCluster \
+--region eu-west-1 \
+--nodegroup-name eksNodes \
+--nodes 2 \
+--nodes-min 2 \
+--nodes-max 10 \
+--node-type t3.micro \
+--with-oidc \
+--ssh-access \
+--ssh-public-key AMSKey \
+--managed
