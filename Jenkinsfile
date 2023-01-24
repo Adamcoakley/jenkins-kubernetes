@@ -16,7 +16,7 @@ pipeline {
 
     stage('Configure kubectl') {
       steps {
-        sh "aws eks --region eu-west-2 update-kubeconfig --name exerciseCluster"
+        sh "aws eks --region eu-west-1 update-kubeconfig --name adams-cluster"
         sh "kubectl config set-context --current --namespace=${development}"
       }
     }
